@@ -1,3 +1,27 @@
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_HOME=`/usr/libexec/java_home`
+#export ANT_HOME=/Users/Shared/macports/share/java/apache-ant
+export ANT_OPTS="-server -XX:MaxPermSize=256M -Xmx1700m -XX:+UseParallelGC -Xms1700m -XX:SoftRefLRUPolicyMSPerMB=1 -XX: MaxHeapFreeRatio=99"
+export INPUTRC=$HOME/.inputrc
+export VIM_APP_DIR=/Applications
+export SVN_EDITOR=vi
+export HTML_TIDY=$HOME/.tidy_config.txt
+
+# virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+
+# rbenv
+export HOMEBREW_GITHUB_API_TOKEN=`/usr/bin/security find-generic-password -gs HOMEBREW_GITHUB_API_TOKEN 2>&1 >/dev/null |  cut -f 2 -d ' ' |  egrep -o '[0-9a-fA-F]+' | tr -d "\n"`
+export RBENV_ROOT=/usr/local/var/rbenv
+export GEM_HOME="$(brew --prefix)/opt/gems"
+export GEM_PATH="$(brew --prefix)/opt/gems"
+
+# nvm
+export NVM_DIR=~/.node
+export NODE_PATH="${NVM_PATH}_modules"
+
 # Make vim the default editor.
 export EDITOR='vim';
 
@@ -18,11 +42,16 @@ export HISTFILESIZE="${HISTSIZE}";
 export HISTCONTROL='ignoreboth';
 
 # Prefer US English and use UTF-8.
-export LANG='en_US.UTF-8';
-export LC_ALL='en_US.UTF-8';
+#export LANG='en_US.UTF-8';
+#export LC_ALL='en_US.UTF-8';
 
 # Highlight section titles in manual pages.
 export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+# Araport/Adama
+export API=https://api.araport.org/community/v0.3
+export API_DEV=http://adama-dev.cloudapp.net/community/v0.3
+export TOKEN_DEV=39be2da6966c4c45ae8439fab1ab8ea8

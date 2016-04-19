@@ -1,0 +1,6 @@
+#!/bin/sh
+
+ruby -e "require 'yaml'; YAML.load_file('$@')"
+RESULT=$?
+
+exit $RESULT

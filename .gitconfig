@@ -5,6 +5,10 @@
 
 	# View the current working tree status using the short format
 	s = status -s
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
@@ -76,10 +80,12 @@
 		fi \
 	}; f"
 
+    ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
-	whitespace = fix
+	whitespace = strip
 
 [core]
 
@@ -104,7 +110,7 @@
 
 	# Use colors in Git commands that are capable of colored output when
 	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	ui = auto
+	ui = true
 
 [color "branch"]
 
@@ -116,24 +122,20 @@
 
 	meta = yellow bold
 	frag = magenta bold # line info
-	old = red # deletions
-	new = green # additions
+	old = red bold# deletions
+	new = green bold # additions
 
 [color "status"]
 
 	added = yellow
 	changed = green
-	untracked = cyan
-
-[commit]
-
-	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	untracked = red
 
 [diff]
 
-	# Detect copies as well as renames
-	renames = copies
+    color = auto
+	renames = true
+    tool = Kaleidoscope
 
 [diff "bin"]
 
@@ -149,6 +151,7 @@
 
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+    tool = Kaleidoscope
 
 [push]
 
@@ -159,24 +162,28 @@
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
 
-# URL shorthands
+[user]
+    name = eriksf
+    email = erik@jcvi.org
 
-[url "git@github.com:"]
+[github]
+    user = eriksf
+    token = !"security find-generic-password -gs GitHub-API-Token 2>&1 >/dev/null |  cut -f 2 -d ' ' |  egrep -o '[0-9a-fA-F]+' | tr -d \"\n\""
 
-	insteadOf = "gh:"
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
+[pager]
+    color = true
 
-[url "git://github.com/"]
+[status]
+    color = auto
 
-	insteadOf = "github:"
-
-[url "git@gist.github.com:"]
-
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
-
-[url "git://gist.github.com/"]
-
-	insteadOf = "gist:"
+[credential]
+        helper = osxkeychain
+[mergetool "Kaleidoscope"]
+        cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+            trustexitcode = true
+[difftool "Kaleidoscope"]
+        cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+        prompt = false
+[mergetool]
+        prompt = false
