@@ -3,7 +3,7 @@ umask 022
 ulimit unlimited
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:/usr/local/bin:/Users/eriksf/Devel/git/foundation-cli/bin:/usr/X11R6/bin:/usr/X11R6/lib:/Developer/Tools:/usr/local/opt/gems/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:$HOME/Devel/git/foundation-cli/bin:$HOME/Devel/git/cyverse-sdk/cyverse-cli/bin:/usr/X11R6/bin:/usr/X11R6/lib:/Developer/Tools:/usr/local/opt/gems/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
