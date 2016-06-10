@@ -44,6 +44,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.node
+export NODE_PATH="${NVM_PATH}_modules"
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
