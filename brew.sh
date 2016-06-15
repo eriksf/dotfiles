@@ -46,11 +46,13 @@ brew install homebrew/dupes/screen
 # Install other useful binaries.
 brew install ant
 brew install autojump
+brew install aws-elasticbeanstalk
 brew install boost
 brew install curl
 brew install enscript
 brew install ffmpeg --with-faac --with-ffplay --with-fontconfig --with-freetype --with-libass --with-libvorbis --with-tools --with-x265
 brew install homebrew/science/genometools --with-hmmer
+brew install geos
 brew install git
 brew install graphviz
 brew install htop-osx
@@ -62,6 +64,7 @@ brew install jq
 brew install libvo-aacenc
 brew install maven
 brew install mobile-shell
+brew install monit
 brew install mysql
 brew install ncftp
 brew install nginx
@@ -71,6 +74,7 @@ brew install homebrew/php/php56 --with-debug --with-homebrew-apxs --with-homebre
 brew install postgresql --with-python
 brew install pyside
 brew install python
+brew install rabbitmq
 brew install rbenv
 brew install redis
 brew install rust
@@ -81,6 +85,7 @@ brew install subversion
 brew install tmux
 brew install homebrew/versions/tomcat7
 brew install watchman
+brew install zeromq
 
 # Remove outdated versions from the cellar.
 brew cleanup
