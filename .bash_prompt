@@ -20,11 +20,33 @@ LIGHT_GRAY="\[\033[0;37m\]"
 RED="\[\033[0;31m\]"
 CYAN="\[\033[0;36m\]"
 GREEN="\[\033[0;32m\]"
+WHITE="\[\033[0;39m\]"
+DARK_GRAY="\[\033[0;90m\]"
+LIGHT_RED="\[\033[0;91m\]"
+LIGHT_GREEN="\[\033[0;92m\]"
+LIGHT_YELLOW="\[\033[0;93m\]"
+LIGHT_BLUE="\[\033[0;94m\]"
+LIGHT_MAGENTA="\[\033[0;95m\]"
+LIGHT_CYAN="\[\033[0;96m\]"
 GIT_PS1_SHOWDIRTYSTATE=true
 export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+#export LSCOLORS=Exfxcxdxbxegedabagacad
 
+# PROMPT FOR BLACK/DARK BACKGROUND TERMINALS
+#export PS1=$LIGHT_GRAY"\u@\h"'$(
+#    if [[ $(__git_ps1) =~ \*\)$ ]]
+#    # a file has been modified but not added
+#    then echo "'$LIGHT_YELLOW'"$(__git_ps1 " (%s)")
+#    elif [[ $(__git_ps1) =~ \+\)$ ]]
+#    # a file has been added, but not commited
+#    then echo "'$LIGHT_MAGENTA'"$(__git_ps1 " (%s)")
+#    # the state is clean, changes are commited
+#    else echo "'$LIGHT_CYAN'"$(__git_ps1 " (%s)")
+#    fi)'$LIGHT_BLUE" \W"$WHITE"> "
+
+# PROMPT FOR WHITE/LIGHT BACKGROUND TERMINALS
 export PS1=$RED"\u@\h"'$(
     if [[ $(__git_ps1) =~ \*\)$ ]]
     # a file has been modified but not added

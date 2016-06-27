@@ -3,7 +3,7 @@ umask 022
 ulimit unlimited
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/Devel/git/foundation-cli/bin:$HOME/Devel/git/cyverse-sdk/cyverse-cli/bin:/usr/X11R6/bin:/usr/X11R6/lib:/Developer/Tools:/usr/local/opt/gems/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/Devel/git/foundation-cli/bin:$HOME/Devel/git/cyverse-sdk/cyverse-cli/bin:$HOME/Devel/icommands/bin:/usr/X11R6/bin:/usr/X11R6/lib:/Developer/Tools:/usr/local/opt/gems/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -35,6 +35,9 @@ if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
+
+# icommands
+source .i-commands-auto.bash
 
 # virtualenv
 source /usr/local/bin/virtualenvwrapper.sh

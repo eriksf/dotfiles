@@ -136,6 +136,7 @@
     color = auto
 	renames = true
     tool = Kaleidoscope
+	submodule = log
 
 [diff "bin"]
 
@@ -175,6 +176,7 @@
 
 [status]
     color = auto
+	submoduleSummary = true
 
 [credential]
         helper = osxkeychain

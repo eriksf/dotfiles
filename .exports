@@ -53,5 +53,6 @@ export MANPAGER='less -X';
 
 # Araport/Adama
 export API=https://api.araport.org/community/v0.3
-export API_DEV=http://adama-dev.cloudapp.net/community/v0.3
+#export API_DEV=http://adama-dev.cloudapp.net/community/v0.3
+export API_DEV=http://129.114.6.164/community/v0.3
 export TOKEN_DEV=39be2da6966c4c45ae8439fab1ab8ea8
