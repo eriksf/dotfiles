@@ -12,6 +12,10 @@ export HTML_TIDY=$HOME/.tidy_config.txt
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 
+# pyenv
+export PYTHON_CONFIGURE_OPTS="--enable-framework CC=clang"
+export PYENV_ROOT=/usr/local/var/pyenv
+
 # rbenv
 export HOMEBREW_GITHUB_API_TOKEN=`/usr/bin/security find-generic-password -gs HOMEBREW_GITHUB_API_TOKEN 2>&1 >/dev/null |  cut -f 2 -d ' ' |  egrep -o '[0-9a-fA-F]+' | tr -d "\n"`
 export RBENV_ROOT=/usr/local/var/rbenv

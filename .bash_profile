@@ -37,13 +37,17 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 # icommands
-source .i-commands-auto.bash
+source $HOME/.i-commands-auto.bash
 
 # virtualenv
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh
