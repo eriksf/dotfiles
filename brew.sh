@@ -36,6 +36,7 @@ brew tap homebrew/core
 brew tap homebrew/dupes
 brew tap homebrew/php
 brew tap homebrew/science
+brew tap homebrew/gui
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -49,6 +50,7 @@ brew install autojump
 brew install aws-elasticbeanstalk
 brew install boost
 brew install curl
+brew install dos2unix
 brew install enscript
 brew install ffmpeg --with-faac --with-ffplay --with-fontconfig --with-freetype --with-libass --with-libvorbis --with-tools --with-x265
 brew install homebrew/science/genometools --with-hmmer
@@ -57,29 +59,39 @@ brew install git
 brew install graphviz
 brew install htop-osx
 brew install homebrew/apache/httpd22
+brew install homebrew/science/htslib
 brew install httpie
 brew install hub
 brew install imap-uw
 brew install jq
+brew install libidn
 brew install libvo-aacenc
 brew install maven
+brew install homebrew/gui/meld
 brew install mobile-shell
 brew install monit
+brew install mp3info
 brew install mysql
 brew install ncftp
 brew install nginx
 brew install nvm
 brew install perl
 brew install homebrew/php/php56 --with-debug --with-homebrew-apxs --with-homebrew-curl --with-postgresql
+brew install homebrew/php/composer
 brew install postgresql --with-python
+brew install pv
+brew install pyenv-virtualenv
+brew install pyenv-virtualenvwrapper
 brew install pyside
 brew install python
+brew install python3
 brew install rabbitmq
 brew install rbenv
 brew install redis
 brew install rust
 brew install sdl
 brew install shellcheck
+brew install socat
 brew install ssh-copy-id
 brew install subversion
 brew install tmux
