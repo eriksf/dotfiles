@@ -1,9 +1,9 @@
 #!/bin/sh
 
-USAGE="Usage: `basename $0` [-hvf] [-s arg] args"
+USAGE="Usage: `basename $0` [-hvfd] [-s arg] args"
 #fallback=1
 
-while getopts hvfs: OPT; do
+while getopts hvfds: OPT; do
     case "$OPT" in
         h)
             echo $USAGE
@@ -15,6 +15,9 @@ while getopts hvfs: OPT; do
             ;;
         f)
             fallback=1
+            ;;
+        d)
+            dark_mode=1
             ;;
         s)
             sshopts=$OPTARG
@@ -29,6 +32,11 @@ done
 
 # remove the switches we parsed above.
 shift `expr $OPTIND - 1`
+
+if [[ ! -z "$dark_mode" ]]; then
+    source ~/.bash_prompt_black
+    tput reset
+fi
 
 if [[ ! -z "$sshopts" ]]; then
     if [[ -z "$fallback" ]]; then
