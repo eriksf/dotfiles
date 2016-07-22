@@ -6,6 +6,7 @@
     },
     "default_options": [
         "--style=colorful",
-        "--follow"
+        "--follow",
+        "--timeout=120"
     ]
 }
