@@ -49,7 +49,7 @@ brew install ant
 brew install autojump
 brew install aws-elasticbeanstalk
 brew install boost
-brew install curl
+brew install curl --with-openssl --with-nghttp2
 brew install dos2unix
 brew install enscript
 brew install ffmpeg --with-faac --with-ffplay --with-fontconfig --with-freetype --with-libass --with-libvorbis --with-tools --with-x265
