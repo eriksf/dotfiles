@@ -50,6 +50,7 @@ brew install autojump
 brew install aws-elasticbeanstalk
 brew install boost
 brew install curl --with-openssl --with-nghttp2
+brew install docker-clean
 brew install dos2unix
 brew install enscript
 brew install ffmpeg --with-faac --with-ffplay --with-fontconfig --with-freetype --with-libass --with-libvorbis --with-tools --with-x265
@@ -96,6 +97,7 @@ brew install ssh-copy-id
 brew install subversion
 brew install tmux
 brew install homebrew/versions/tomcat7
+brew install homebrew/science/vcftools
 brew install watchman
 brew install zeromq
 

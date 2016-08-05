@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 find . -path ./.git -prune -o -type f -print0 | while IFS= read -r -d '' file
 do
