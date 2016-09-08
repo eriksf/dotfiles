@@ -100,6 +100,7 @@ brew install sdl
 brew install shellcheck
 brew install socat
 brew install ssh-copy-id
+brew install stormssh
 brew install subversion
 brew install tmux
 brew install homebrew/versions/tomcat7
