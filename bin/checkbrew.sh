@@ -2,8 +2,8 @@
 
 for i in $(brew leaves)
 do
-    found=$(grep -c "brew install \b${i}\b" brew.sh)
+    found=$(egrep -c "brew install \b${i}\b([^-]|$)" brew.sh)
     if [[ $found -ne 1 ]]; then
-        echo "Check ${i}... "
+        echo "Check ${i} [${found}]... "
     fi
 done

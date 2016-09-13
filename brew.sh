@@ -59,8 +59,10 @@ brew install curl --with-openssl --with-nghttp2
 brew install docker-clean
 brew install dos2unix
 brew install enscript
+brew install fdupes
 brew install ffmpeg --with-faac --with-ffplay --with-fontconfig --with-freetype --with-libass --with-libvorbis --with-tools --with-x265
 brew install homebrew/science/genometools --with-hmmer
+brew install gdb
 brew install geos
 brew install git
 brew install graphviz
@@ -78,9 +80,11 @@ brew install homebrew/gui/meld
 brew install mobile-shell
 brew install monit
 brew install mp3info
+brew install mycli
 brew install mysql
 brew install ncftp
 brew install nginx
+brew install node
 brew install nvm
 brew install perl
 brew install homebrew/php/php56 --with-debug --with-homebrew-apxs --with-homebrew-curl --with-postgresql
