@@ -108,6 +108,7 @@ brew install stormssh
 brew install subversion
 brew install tmux
 brew install homebrew/versions/tomcat7
+brew install tree
 brew install homebrew/science/vcftools
 brew install watchman
 brew install zeromq
