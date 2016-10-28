@@ -43,6 +43,7 @@ brew tap homebrew/dupes
 brew tap homebrew/php
 brew tap homebrew/science
 brew tap homebrew/gui
+brew tap caskroom/cask
 
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
@@ -87,7 +88,7 @@ brew install nginx
 brew install node
 brew install nvm
 brew install perl
-brew install homebrew/php/php56 --with-debug --with-homebrew-apxs --with-homebrew-curl --with-postgresql
+brew install homebrew/php/php56 --with-debug --with-apache22 --with-homebrew-curl --with-postgresql
 brew install homebrew/php/composer
 brew install postgresql --with-python
 brew install pv
@@ -112,6 +113,12 @@ brew install tree
 brew install homebrew/science/vcftools
 brew install watchman
 brew install zeromq
+
+# install cask apps
+brew cask install virtualbox
+brew cask install virtualbox-extension-pack
+brew cask install vagrant
+brew cask install vagrant-manager
 
 # Remove outdated versions from the cellar.
 brew cleanup
