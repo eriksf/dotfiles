@@ -44,6 +44,7 @@ brew tap homebrew/php
 brew tap homebrew/science
 brew tap homebrew/gui
 brew tap caskroom/cask
+brew tap buo/cask-upgrade
 
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
@@ -119,6 +120,7 @@ brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install vagrant
 brew cask install vagrant-manager
+brew cask install bitbar
 
 # Remove outdated versions from the cellar.
 brew cleanup

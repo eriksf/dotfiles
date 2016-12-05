@@ -63,3 +63,6 @@ export API=https://api.araport.org/community/v0.3
 export API_DEV=http://129.114.6.164/community/v0.3
 export TOKEN_DEV=39be2da6966c4c45ae8439fab1ab8ea8
 export TOKEN=$(jq '.access_token' ~/.agave/current | sed 's/"//g')
+
+# tvcl API key
+THETVDB_API_KEY=4BE21B103DDEDCC2
