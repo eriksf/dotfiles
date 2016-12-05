@@ -9,6 +9,7 @@ set nocompatible
 "  runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
 "  call pathogen#infect()
 "  call pathogen#helptags()
+execute pathogen#infect()
 
 " ================ General Config ====================
 

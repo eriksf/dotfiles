@@ -81,6 +81,7 @@
 	}; f"
 
     ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+	spush = push --recurse-submodules=on-demand
 
 [apply]
 
@@ -189,3 +190,5 @@
         prompt = false
 [mergetool]
         prompt = false
+[pull]
+	rebase = preserve
