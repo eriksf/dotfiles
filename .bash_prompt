@@ -32,6 +32,7 @@ LIGHT_MAGENTA="\[\033[0;95m\]"
 LIGHT_CYAN="\[\033[0;96m\]"
 COLOROFF="\[\033[0m\]"
 GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
 export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD

@@ -121,6 +121,7 @@ brew cask install virtualbox-extension-pack
 brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install bitbar
+brew cask install hyper
 
 # Remove outdated versions from the cellar.
 brew cleanup
