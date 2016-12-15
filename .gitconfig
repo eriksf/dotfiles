@@ -136,7 +136,7 @@
 
     color = auto
 	renames = true
-    tool = Kaleidoscope
+	tool = opendiff
 	submodule = log
 
 [diff "bin"]
