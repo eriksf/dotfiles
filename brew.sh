@@ -37,6 +37,7 @@ brew install wget --with-iri
 
 # tap some more
 brew tap homebrew/apache
+brew tap homebrew/boneyard
 brew tap homebrew/core
 brew tap homebrew/dupes
 brew tap homebrew/php
@@ -60,6 +61,7 @@ brew install curl --with-openssl --with-nghttp2
 brew install docker-clean
 brew install dos2unix
 brew install enscript
+brew install faac
 brew install fdupes
 brew install ffmpeg --with-faac --with-ffplay --with-fontconfig --with-freetype --with-libass --with-libvorbis --with-tools --with-x265
 brew install homebrew/science/genometools --with-hmmer
@@ -69,6 +71,7 @@ brew install git
 brew install graphviz
 brew install htop-osx
 brew install homebrew/apache/httpd22
+brew install homebrew/apache/httpd24
 brew install homebrew/science/htslib
 brew install httpie
 brew install hub
@@ -81,6 +84,7 @@ brew install homebrew/gui/meld
 brew install mobile-shell
 brew install monit
 brew install mp3info
+brew install mtr
 brew install mycli
 brew install mysql
 brew install ncftp
@@ -108,8 +112,9 @@ brew install ssh-copy-id
 brew install stormssh
 brew install subversion
 brew install tmux
-brew install homebrew/versions/tomcat7
+brew install tomcat@7
 brew install tree
+brew install utf8proc
 brew install homebrew/science/vcftools
 brew install watchman
 brew install zeromq
