@@ -69,6 +69,7 @@ brew install gdb
 brew install geos
 brew install git
 brew install graphviz
+brew install handbrake
 brew install htop-osx
 brew install homebrew/apache/httpd22
 brew install homebrew/apache/httpd24
@@ -81,9 +82,12 @@ brew install libidn
 brew install libvo-aacenc
 brew install maven
 brew install homebrew/gui/meld
+brew install mkvtoolnix
 brew install mobile-shell
 brew install monit
 brew install mp3info
+brew install mp4v2
+brew install mplayer
 brew install mtr
 brew install mycli
 brew install mysql
