@@ -24,10 +24,6 @@ export RBENV_ROOT=/usr/local/var/rbenv
 export GEM_HOME="$(brew --prefix)/opt/gems"
 export GEM_PATH="$(brew --prefix)/opt/gems"
 
-# nvm
-export NVM_DIR=~/.node
-export NODE_PATH="${NVM_PATH}_modules"
-
 # Make vim the default editor.
 export EDITOR='vim';
 

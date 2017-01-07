@@ -50,8 +50,8 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # nvm
-source $(brew --prefix nvm)/nvm.sh
 export NVM_DIR=~/.node
+source $(brew --prefix nvm)/nvm.sh
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
