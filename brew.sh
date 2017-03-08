@@ -49,14 +49,16 @@ brew tap buo/cask-upgrade
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
+#brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
 # Install other useful binaries.
 brew install ant
 brew install autojump
+brew install autossh
 brew install aws-elasticbeanstalk
 brew install boost
+brew install ctags
 brew install curl --with-openssl --with-nghttp2
 brew install docker-clean
 brew install dos2unix
@@ -84,6 +86,7 @@ brew install maven
 brew install homebrew/gui/meld
 brew install mkvtoolnix
 brew install mobile-shell
+brew install mongodb
 brew install monit
 brew install mp3info
 brew install mp4v2
@@ -102,6 +105,7 @@ brew install postgresql --with-python
 brew install pv
 brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
+brew install pyenv-pip-migrate
 brew install pyside
 brew install python
 brew install python3

@@ -242,3 +242,7 @@ function refresh_token() {
     sleep 1
     export TOKEN=$(jq '.access_token' ~/.agave/current | sed 's/"//g')
 }
+
+function init_ansible() {
+    source $HOME/Devel/git/ansible/hacking/env-setup
+}
