@@ -83,6 +83,8 @@
     ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 	spush = push --recurse-submodules=on-demand
 
+    ahead = log @{u}...HEAD --graph --decorate --left-right --boundary --pretty=format:'%Cred%h%Creset %d %s %Cgreen(%cr)%Creset %Cblue[%an]%Creset' --abbrev-commit --date=relative
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
@@ -165,7 +167,7 @@
 	followTags = true
 
 [user]
-    name = eriksf
+    name = Erik Ferlanti
     email = eferlanti@tacc.utexas.edu
 
 [github]

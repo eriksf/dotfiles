@@ -72,3 +72,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # setup ansible
 #source $HOME/Devel/git/ansible/hacking/env-setup
+
+# autoenv
+source /usr/local/opt/autoenv/activate.sh
