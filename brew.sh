@@ -22,7 +22,6 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
-brew tap homebrew/versions
 brew install bash-completion
 brew install bash-completion2
 
@@ -35,6 +34,8 @@ fi;
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
+# Install GnuPG to enable PGP-signing commits.
+brew install gnupg
 # tap some more
 brew tap homebrew/apache
 brew tap homebrew/boneyard
@@ -47,10 +48,10 @@ brew tap caskroom/cask
 brew tap buo/cask-upgrade
 
 # Install more recent versions of some macOS tools.
-brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-#brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+brew install vim --with-override-system-vi
+brew install grep
+brew install openssh
+brew install screen
 
 # Install other useful binaries.
 brew install ant
