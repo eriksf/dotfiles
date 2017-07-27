@@ -22,6 +22,7 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
+brew tap homebrew/versions
 brew install bash-completion
 brew install bash-completion2
 
@@ -50,7 +51,7 @@ brew tap buo/cask-upgrade
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep
-brew install openssh
+#brew install openssh
 brew install screen
 
 # Install other useful binaries.
@@ -153,6 +154,7 @@ brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install bitbar
 brew cask install hyper
+brew cask install kdiff3
 
 # Remove outdated versions from the cellar.
 brew cleanup
