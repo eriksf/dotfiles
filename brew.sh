@@ -23,7 +23,7 @@ brew install gnu-sed --with-default-names
 # running `chsh`.
 brew install bash
 brew tap homebrew/versions
-brew install bash-completion
+#brew install bash-completion
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
@@ -75,6 +75,8 @@ brew install homebrew/science/genometools --with-hmmer
 brew install gdb
 brew install geos
 #brew install git
+brew install git-flow
+brew install git-lfs
 brew install gnome-icon-theme
 brew install graphviz
 brew install gtksourceview3
@@ -128,7 +130,6 @@ brew install rbenv
 brew install redis
 brew install ruby
 brew install rust
-brew install screen
 brew install sdl
 brew install shellcheck
 brew install smartmontools
