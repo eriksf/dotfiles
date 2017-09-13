@@ -46,6 +46,7 @@ brew tap homebrew/php
 brew tap homebrew/science
 brew tap homebrew/gui
 brew tap caskroom/cask
+brew tap caskroom/fonts
 brew tap buo/cask-upgrade
 
 # Install more recent versions of some macOS tools.
@@ -156,6 +157,7 @@ brew cask install vagrant-manager
 brew cask install bitbar
 brew cask install hyper
 brew cask install kdiff3
+brew cask install font-fira-code
 
 # Remove outdated versions from the cellar.
 brew cleanup
