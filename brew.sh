@@ -135,6 +135,7 @@ brew install sdl
 brew install shellcheck
 brew install smartmontools
 brew install socat
+brew install rlwrap
 brew install ssh-copy-id
 brew install stormssh
 brew install subversion

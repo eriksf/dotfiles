@@ -91,7 +91,7 @@
 [apply]
 
 	# Detect whitespace errors when applying a patch
-	whitespace = strip
+	whitespace = fix
 
 [core]
 
@@ -116,7 +116,7 @@
 
 	# Use colors in Git commands that are capable of colored output when
 	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	ui = true
+	ui = auto
 
 [color "branch"]
 
@@ -128,8 +128,8 @@
 
 	meta = yellow bold
 	frag = magenta bold # line info
-	old = red bold# deletions
-	new = green bold # additions
+	old = red # deletions
+	new = green # additions
 
 [color "status"]
 
@@ -139,8 +139,8 @@
 
 [diff]
 
-    color = auto
-	renames = true
+        color = auto
+	renames = copies
 	tool = opendiff
 	submodule = log
 	indentHeuristic = true
