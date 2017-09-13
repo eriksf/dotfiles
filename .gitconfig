@@ -139,11 +139,11 @@
 
 [diff]
 
-        color = auto
+    color = auto
 	renames = copies
-	tool = opendiff
+	tool = meld
+    guitool = meld
 	submodule = log
-	indentHeuristic = true
 
 [diff "bin"]
 
@@ -159,7 +159,7 @@
 
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
-    tool = kdiff3
+    tool = meld
 
 [push]
 
@@ -192,10 +192,16 @@
             trustexitcode = true
 [difftool "Kaleidoscope"]
         cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool "meld"]
+        trustExitCode = true
+        cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
 [difftool]
         prompt = false
 [mergetool]
         prompt = false
+[mergetool "meld"]
+        trustExitCode = true
+        cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
 [pull]
 	rebase = preserve
 [filter "lfs"]
