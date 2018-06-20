@@ -209,3 +209,17 @@ function refresh_token() {
 function init_ansible() {
     source $HOME/Devel/git/ansible/hacking/env-setup
 }
+
+function pipsi-upgrade() {
+  pipsi upgrade pipsi
+  for package in $(pipsi list | sed -ne 's/^.*Package "\(.*\)".*/\1/p' | grep -v pipsi); do
+    echo pipsi upgrade "$package"
+    pipsi upgrade "$package"
+  done
+  if [[ "$1" == "--all" ]]; then
+    for venv in $HOME/.local/venvs/*; do
+      echo Upgrading pip in $venv
+      . $venv/bin/activate && pip install --upgrade pip && deactivate
+    done
+  fi
+}

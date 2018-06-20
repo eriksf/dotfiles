@@ -3,7 +3,7 @@ umask 022
 ulimit unlimited
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/.local/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/cyverse-cli/bin:$HOME/Devel/git/foundation-cli/bin:$HOME/Devel/icommands/bin:/usr/local/m-cli:/usr/X11R6/bin:/usr/X11R6/lib:/Developer/Tools:/usr/local/opt/gems/bin:$HOME/Devel/git/ansible/bin:$PATH"
+export PATH="$HOME/abaco-cli:$HOME/sd2e-cloud-cli/bin:/$HOME/.yarn/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/cyverse-cli/bin:$HOME/Devel/git/foundation-cli/bin:$HOME/Devel/icommands/bin:/usr/local/m-cli:/usr/X11R6/bin:/usr/X11R6/lib:/Developer/Tools:/usr/local/opt/gems/bin:$HOME/Devel/git/ansible/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -73,5 +73,3 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # setup ansible
 #source $HOME/Devel/git/ansible/hacking/env-setup
 
-# autoenv
-source /usr/local/opt/autoenv/activate.sh

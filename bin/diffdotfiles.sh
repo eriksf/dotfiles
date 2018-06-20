@@ -7,6 +7,10 @@ do
     if [ "$n" -ot "../$n" ]; then
         t="(newer)"
     fi
-    echo "Diffing $n $t..."
-    diff $n ../$n 2>/dev/null
+    #echo "Diffing $n $t..."
+    out=$(diff $n ../$n 2>/dev/null)
+    if [[ ! -z $out ]]; then
+        echo "Found difference in $n $t..."
+        echo "$out"
+    fi
 done

@@ -9,7 +9,8 @@ set nocompatible
 "  runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
 "  call pathogen#infect()
 "  call pathogen#helptags()
-execute pathogen#infect()
+call pathogen#infect()
+call pathogen#helptags()
 
 " ================ General Config ====================
 
@@ -30,6 +31,7 @@ set wildmenu
 set cmdheight=2
 set showmatch
 set mat=2
+set cursorline
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -38,6 +40,16 @@ set hidden
 
 "turn on syntax highlighting
 syntax on
+colorscheme zenburn
+
+" yank to clipboard
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
 
 " ================ Search Settings  =================
 
@@ -64,6 +76,8 @@ set nowb
 set autoindent
 set smartindent
 set smarttab
+set smartcase
+set ignorecase
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
@@ -116,3 +130,13 @@ nnoremap tt  :tabedit<Space>
 nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
+
+set guifont=Inconsolata\ for\ Powerline:h15
+set t_Co=256
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
+let g:pymode_options_colorcolumn = 0
+
