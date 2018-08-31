@@ -5,7 +5,7 @@
         "httpie": "0.9.4"
     },
     "default_options": [
-        "--style=colorful",
+        "--style=native",
         "--follow",
         "--timeout=120"
     ]

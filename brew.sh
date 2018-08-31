@@ -63,6 +63,7 @@ brew install autojump
 brew install autossh
 brew install aws-elasticbeanstalk
 brew install boost
+brew install bsdgames-osx
 brew install ctags
 brew install curl --with-openssl --with-nghttp2
 brew install docker-clean
@@ -70,6 +71,7 @@ brew install dos2unix
 brew install duck
 brew install enscript
 brew install erlang@19
+brew install erlang@20
 brew install faac
 brew install fdupes
 brew install ffmpeg --with-faac --with-ffplay --with-fontconfig --with-freetype --with-libass --with-libvorbis --with-tools --with-x265
