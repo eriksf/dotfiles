@@ -81,8 +81,8 @@ brew install genometools --with-hmmer
 brew install gdb
 brew install geckodriver
 brew install geos
-#brew install git
-brew install git-flow
+brew install git
+brew install git-flow-avh
 brew install git-lfs
 brew install gnome-icon-theme
 brew install graphviz
@@ -125,6 +125,7 @@ brew install openssl@1.1
 brew install pandoc
 brew install perl
 brew install php@5.6 --with-debug --with-apache22 --with-homebrew-curl --with-postgresql
+brew install pianobar
 brew install composer
 brew install postgresql --with-python
 brew install postgresql@9.5

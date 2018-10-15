@@ -66,3 +66,6 @@ export TOKEN=$(jq '.access_token' ~/.agave/current | sed 's/"//g')
 
 # tvcl API key
 export THETVDB_API_KEY=4BE21B103DDEDCC2
+
+# git
+export GIT_INTERNAL_GETTEXT_TEST_FALLBACKS=1

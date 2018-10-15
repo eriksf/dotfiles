@@ -12,26 +12,34 @@ set nocompatible
 "set noguipty
 
 set autoindent
+set autoread
 "set backup
 "set backupdir=/export/erik
 "set backupext=.~n~
-set backspace=2
+set backspace=indent,eol,start
 set cmdheight=2
 set columns=140
+set cursorline
 set lines=55
 "set dir=/export/erik
 set expandtab
 set exrc
-set history=100
+set hidden
+set history=1000
 set infercase
 "set ignorecase
+set laststatus=2
+set lazyredraw
 set linebreak
 "set lines=54
+set magic
+set mat=2
 set ruler
 set scrolloff=4
 set shiftwidth=4
 set showbreak===>
 set showmatch
+set showcmd
 set showmode
 set smartcase
 set smartindent
@@ -39,7 +47,9 @@ set smarttab
 set softtabstop=4
 set tabstop=4
 set viminfo=%,'50
+set visualbell
 "set nowrap
+set wildmenu
 set wrap
 "set writebackup
 

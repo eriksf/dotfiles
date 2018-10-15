@@ -175,6 +175,7 @@
 [user]
     name = Erik Ferlanti
     email = eferlanti@tacc.utexas.edu
+	signingkey = 89CF653B73EA6F90
 
 [github]
     user = eriksf
