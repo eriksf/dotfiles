@@ -101,9 +101,10 @@ brew install autossh
 brew install aws-elasticbeanstalk
 brew install boost
 brew install bsdgames-osx
+brew install cmake
 brew install ctags
 brew install curl --with-openssl --with-nghttp2
-brew install dive
+brew install wagoodman/dive/dive
 brew install docker-clean
 brew install dos2unix
 brew install duck
@@ -142,6 +143,7 @@ brew install libvo-aacenc
 brew install libxml2
 brew install maven
 brew install homebrew/gui/meld
+brew install makedepend
 brew install mercurial
 brew install mkvtoolnix
 brew install mobile-shell
@@ -190,7 +192,6 @@ brew install sdl
 brew install shared-mime-info
 brew install shellcheck
 brew install smartmontools
-brew install socat
 brew install spdylay
 brew install ssh-copy-id
 brew install stormssh
