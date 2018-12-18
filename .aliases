@@ -37,7 +37,7 @@ alias l="${LS} -lF ${colorflag}"
 alias ll="${LS} -lF ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias la="${LS} -laF ${colorflag}"
+alias la="${LS} -lAF ${colorflag}"
 alias lh="${LS} -lhF ${colorflag}"
 alias lt="${LS} -lFtrh ${colorflag}"
 alias llm="${LS} -lF ${colorflag} | more"
