@@ -48,6 +48,7 @@ brew tap homebrew/gui
 brew tap caskroom/cask
 brew tap caskroom/fonts
 brew tap buo/cask-upgrade
+brew tap wagoodman/dive
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
@@ -66,6 +67,7 @@ brew install boost
 brew install bsdgames-osx
 brew install ctags
 brew install curl --with-openssl --with-nghttp2
+brew install dive
 brew install docker-clean
 brew install dos2unix
 brew install duck

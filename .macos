@@ -127,6 +127,9 @@ sudo systemsetup -setrestartfreeze on
 #sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
 #sudo ln -s /path/to/your/image /System/Library/CoreServices/DefaultDesktop.jpg
 
+# Re-enable subpixel antialiasing for text (Mojave turned this off). Helps on non-retina displays.
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
