@@ -69,3 +69,11 @@ export THETVDB_API_KEY=4BE21B103DDEDCC2
 
 # git
 export GIT_INTERNAL_GETTEXT_TEST_FALLBACKS=1
+
+# Go
+#export GOPATH="${HOME}/.go"
+#export GOROOT="$(brew --prefix golang)/libexec"
+
+#export COMPOSE_PROJECT_NAME=redash
+#export COMPOSE_FILE=/opt/redash/docker-compose.yml
+

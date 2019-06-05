@@ -41,16 +41,17 @@ brew install wget --with-iri
 brew install gnupg
 # tap some more
 #brew tap homebrew/apache
-brew tap homebrew/boneyard
+#brew tap homebrew/boneyard
 brew tap homebrew/core
 #brew tap homebrew/dupes
 brew tap homebrew/php
 brew tap homebrew/science
-brew tap homebrew/gui
+#brew tap homebrew/gui
 brew tap caskroom/cask
 brew tap caskroom/fonts
 brew tap buo/cask-upgrade
 brew tap wagoodman/dive
+brew tap heroku/brew
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
@@ -95,6 +96,7 @@ brew install xz
 # Install other useful binaries.
 brew install adwaita-icon-theme
 brew install ant
+brew install aspell
 brew install autoenv
 brew install autojump
 brew install autossh
@@ -104,6 +106,7 @@ brew install bsdgames-osx
 brew install cmake
 brew install ctags
 brew install curl --with-openssl --with-nghttp2
+brew install curl-openssl
 brew install wagoodman/dive/dive
 brew install docker-clean
 brew install dos2unix
@@ -124,11 +127,14 @@ brew install git
 brew install git-flow-avh
 brew install git-lfs
 brew install gnome-icon-theme
+brew install go
 brew install graphviz
 brew install grip
 brew install gtksourceview3
 brew install handbrake
-brew install htop-osx
+brew install heroku
+brew install htop
+#brew install htop-osx
 brew install httpd
 #brew install homebrew/apache/httpd22
 #brew install homebrew/apache/httpd24
@@ -137,13 +143,18 @@ brew install httpie
 brew install hub
 brew install imap-uw
 brew install jq
+brew install kubernetes-cli
 brew install libidn
 brew install libmemcached
+brew install libpq
 brew install libvo-aacenc
 brew install libxml2
+brew install libzip
+brew install llvm
 brew install maven
 brew install homebrew/gui/meld
 brew install makedepend
+brew install mcrypt
 brew install mercurial
 brew install mkvtoolnix
 brew install mobile-shell
@@ -198,6 +209,7 @@ brew install stormssh
 brew install subversion
 brew install swig
 brew install texi2html
+brew install tidy-html5
 brew install tmux
 brew install tomcat@7
 brew install tree
@@ -211,6 +223,7 @@ brew install yarn --without-node
 brew install yasm
 brew install zeromq
 brew install zlib
+brew install zsh
 
 # install cask apps
 brew cask install virtualbox

@@ -139,4 +139,5 @@ set term=xterm-256color
 set termencoding=utf-8
 
 let g:pymode_options_colorcolumn = 0
+let g:pymode_syntax = 0
 

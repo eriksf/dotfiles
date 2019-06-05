@@ -175,7 +175,7 @@
 [user]
     name = Erik Ferlanti
     email = eferlanti@tacc.utexas.edu
-	signingkey = 89CF653B73EA6F90
+	signingkey = C06390EB01E69A13
 
 [github]
     user = eriksf
@@ -212,3 +212,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgsign = true

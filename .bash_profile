@@ -2,8 +2,12 @@
 umask 022
 ulimit unlimited
 
+# Go                                                                                                                       
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/sd2e-cloud-cli/bin:/$HOME/.yarn/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/cyverse-cli/bin:$HOME/Devel/git/foundation-cli/bin:$HOME/Devel/icommands/bin:/usr/local/m-cli:/usr/X11R6/bin:/usr/X11R6/lib:/Developer/Tools:/usr/local/opt/gems/bin:$HOME/Devel/git/ansible/bin:$PATH"
+export PATH="$HOME/sd2e-cloud-cli/bin:/$HOME/.yarn/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/cyverse-cli/bin:$HOME/Devel/git/foundation-cli/bin:$HOME/Devel/icommands/bin:/usr/local/m-cli:/usr/X11R6/bin:/usr/X11R6/lib:/Developer/Tools:/usr/local/opt/gems/bin:$HOME/Devel/git/ansible/bin:$GOPATH/bin:$GOROOT/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -72,4 +76,10 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # setup ansible
 #source $HOME/Devel/git/ansible/hacking/env-setup
+
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/eriksf/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
